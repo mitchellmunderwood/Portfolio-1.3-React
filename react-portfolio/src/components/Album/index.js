@@ -4,8 +4,8 @@ import "./index.css";
 function Album(props) {
 
     return (
-        <div class=" album pb-5">
-            <div class="row">
+        <div className=" album pb-5">
+            <div className="row">
                 {props.children}
             </div>
         </div>

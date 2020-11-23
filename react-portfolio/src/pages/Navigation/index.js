@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
 
 import NavBar from "../../components/NavBar/index";
@@ -6,7 +6,10 @@ import Drawer from '@material-ui/core/Drawer';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavDrawerContents from "../../components/NavDrawerContents/index";
 
+
 function Navigation() {
+
+
     const [state, setState] = React.useState({
         left: false,
       });

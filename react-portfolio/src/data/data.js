@@ -1,56 +1,84 @@
-const data = [
+const data = {
+  posts: [{
+    imageRef: "/parentconnect.png",
+    type: "Post",
+    title: "title",
+    date: "12/31/20",
+    description: "a short post description",
+    color: 'red'
+  }],
+  projects:[
     {
-      name: "Parent Connect",
+      type: "Project",
+      date: "TBD",
+      title: "Parent Connect",
       description: "Homeschool together during COVID",
       imageRef: "/parentconnect.png",
-      githubLink: "https://github.com/mitchellmunderwood/Parent-Connect",
-      deployLink: "https://parent-connect.herokuapp.com/",
-      stack: ["JS", "HTML/CSS", "Handlebars", "Express", "Node", "MySQL"],
+      repoLink: "https://github.com/mitchellmunderwood/Parent-Connect",
+      liveLink: "https://parent-connect.herokuapp.com/",
+      badges: ["JS", "HTML/CSS", "Handlebars", "Express", "Node", "MySQL"],
+      color: "yellow"
     },
   
     {
-      name: "Party Planner",
+      type: "Project",
+      date: "TBD",
+      title: "Party Planner",
       description: "Discover meals and cocktails",
       imageRef: "/party_planner.png",
-      githubLink:
+      repoLink:
         "https://github.com/mitchellmunderwood/Party-Planning-Committee",
-      deployLink:
+      liveLink:
         "https://mitchellmunderwood.github.io/Party-Planning-Committee/",
-      stack: ["JS", "HTML/CSS", "Material Design", "MealsDB API", "DrinksDB API"],
+      badges: ["JS", "HTML/CSS", "Material Design", "MealsDB API", "DrinksDB API"],
+      color: "gray"
     },
     {
-      name: "Eat-Da-Burger!",
+      type: "Project",
+      date: "TBD",
+      title: "Eat-Da-Burger!",
       description: "Eat delicious burgers",
       imageRef: "/burgers.png",
-      githubLink: "https://github.com/mitchellmunderwood/Burger-Buddy",
-      deployLink: "https://burger-buddy-mu.herokuapp.com/",
-      stack: ["JS", "HTML/CSS", "Express", "Node", "MySQL"],
+      repoLink: "https://github.com/mitchellmunderwood/Burger-Buddy",
+      liveLink: "https://burger-buddy-mu.herokuapp.com/",
+      badges: ["JS", "HTML/CSS", "Express", "Node", "MySQL"],
+      color: "green"
     },
     {
-      name: "Daily Forecast",
+      type: "Project",
+      date: "TBD",
+      title: "Daily Forecast",
       description: "Get your local weather",
       imageRef: "/weather.png",
-      githubLink: "https://github.com/mitchellmunderwood/Weather-App",
-      deployLink: "https://mitchellmunderwood.github.io/Weather-App/",
-      stack: ["JS", "HTML/CSS", "Bootstrap", "OpenWeather API"],
+      repoLink: "https://github.com/mitchellmunderwood/Weather-App",
+      liveLink: "https://mitchellmunderwood.github.io/Weather-App/",
+      badges: ["JS", "HTML/CSS", "Bootstrap", "OpenWeather API"],
+      color: "red"
     },
     {
-      name: "Code Quiz",
+      type: "Project",
+      date: "TBD",
+      title: "Code Quiz",
       description: "Test your JS knowledge",
       imageRef: "/quiz.png",
-      githubLink: "https://github.com/mitchellmunderwood/Code-Quiz",
-      deployLink: "https://mitchellmunderwood.github.io/Code-Quiz/",
-      stack: ["JS", "HTML/CSS"],
+      repoLink: "https://github.com/mitchellmunderwood/Code-Quiz",
+      liveLink: "https://mitchellmunderwood.github.io/Code-Quiz/",
+      badges: ["JS", "HTML/CSS"],
+      color: "blue"
     },
     {
-      name: "Password Generator",
+      type: "Project",
+      date: "TBD",
+      title: "Password Generator",
       description: "Stay safe with secure passwords",
       imageRef: "/password.png",
-      githubLink: "https://github.com/mitchellmunderwood/Password-Generator",
+      repoLink: "https://github.com/mitchellmunderwood/Password-Generator",
       deployLink: "https://mitchellmunderwood.github.io/Password-Generator/",
-      stack: ["JS"],
-    },
-  ];
+      badges: ["JS"],
+      color: "orange"
+    }]
+  
+  };
   
   export default data;
   

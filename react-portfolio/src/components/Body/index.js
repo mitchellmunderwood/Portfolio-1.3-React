@@ -5,7 +5,7 @@ function Body(props) {
 
     return (
         <main role="main">
-            <div class="container">
+            <div className="container">
                 {props.children}
             </div>
         </main>

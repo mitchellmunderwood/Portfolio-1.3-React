@@ -1,30 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
 import Body from "../../components/Body/index";
 import Album from "../../components/Album/index";
 import Card3 from "../../components/Card3/index";
+import {useStoreContext} from "../../store/store";
 
 function Projects() {
-
-    const sampleProject = {
-        imageRef: "/party_planner.png",
-        type: "Project",
-        title: "title",
-        date: "12/31/20",
-        description: "a short project description",
-        repoLink: "www.github.com/mitchellmunderwood",
-        liveLink: "www.google.com",
-        badges: ["none", "so", "far"],
-        colorClass: "line-gray",
-    }
-
+    const [state, dispatch] = useStoreContext();
 
     return (<div>
         <Body>
             <Album>
-                <Card3 content={sampleProject}/>
-                <Card3 content={sampleProject}/>
-                <Card3 content={sampleProject}/>
+                {state.projects.map(project => {
+                    return <Card3 content={project}/>
+                })}
             </Album>
         </Body>
     </div>

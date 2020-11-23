@@ -1,4 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {useStoreContext} from "./store/store";
+import {SET_CONTENT} from "./store/actions";
+import data from "./data/data";
+
 import './App.css';
 
 import Navigation from "./pages/Navigation/index";
@@ -9,10 +14,18 @@ import Project from "./pages/Project/index";
 import Posts from "./pages/Posts/index";
 import Post from "./pages/Post/index";
 import Author from "./pages/Author/index";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Hero from "./components/Hero/index";
 
-function App() {
+const App = () => {
+
+  const [state, dispatch] = useStoreContext();
+
+  useEffect(()=>{
+    dispatch({type: SET_CONTENT, content: data });
+
+    console.log("state", state);
+
+  },[]);
 
   return (
     <div className="App">
