@@ -1,27 +1,34 @@
 import React from "react";
 import "./index.css";
+import {Link} from "react-router-dom";
 
-function Project() {
+function Project(props) {
+
+    const {imageRef, type, title, date, description, badges, repoLink, liveLink} = props.content;
+
     return (
-        <div class="col-md-12 post">
-            <div class="card mb-1" id="no-hover-shadow">
-                <h1 class="title">Parent Connect</h1>
-                <div class="card-img-container">
-                    <img class="bd-placeholder-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png" width="100%" height="225"  role="img" aria-label="Placeholder: Thumbnail" />
+        <div className="col-md-12 post">
+            <div className="card mb-1" id="no-hover-shadow">
+                <h1 className="title">{title}</h1>
+                <div className="card-img-container">
+                    <img className="bd-placeholder-img" src={process.env.PUBLIC_URL + "/images" + imageRef} width="100%" height="225"  role="img" aria-label="Placeholder: Thumbnail" />
                 </div>
 
-                <div class="card-body">
-                    <small class="text-muted">11/12/20</small>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="badges">
-                        <img src="https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=white" alt="" />
+                <div className="card-body">
+                    <small className="text-muted">{date}</small>
+                    <p className="card-text">{description}</p>
+                    <div className="badges">
+                        {badges.map(badge => {
+                           return <img src={"https://img.shields.io/badge/" + badge.type + "-" + badge.name + "-informational?style=flat&logo=" + badge.name.toLowerCase() + "&logoColor=white&color=white"} />;
+                        })}
                     </div>                                            
-                    <button type="button" class="btn btn-primary">Go to Live</button>
-                    <button type="button" class="btn btn-secondary">Go to Repo</button>
+                    <button type="button" className="btn btn-primary"><a class="button-link" href={"https://" + liveLink}>Go to Live</a></button>
+                    <button type="button" className="btn btn-secondary"><a class="button-link" href={"https://" + repoLink}>Go to Repo</a></button>
                 </div>
             </div>
         </div>
     )
 }
+
 
 export default Project;

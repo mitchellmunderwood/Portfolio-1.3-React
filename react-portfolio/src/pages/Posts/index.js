@@ -7,12 +7,22 @@ import Card3 from "../../components/Card3/index";
 
 function Posts() {
 
+    const samplePost ={
+        imageRef: "/parentconnect.png",
+        type: "Post",
+        title: "title",
+        date: "12/31/20",
+        description: "a short post description",
+        colorClass: 'line-red',
+    }
+
+
     return (<div>
         <Body>
             <Album>
-                <Card3 />
-                <Card3 />
-                <Card3 />
+                <Card3 content={samplePost}/>
+                <Card3 content={samplePost}/>
+                <Card3 content={samplePost}/>
             </Album>
         </Body>
     </div>

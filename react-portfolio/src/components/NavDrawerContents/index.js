@@ -17,26 +17,26 @@ export default function NavDrawerContents(props) {
           <div className="mdc-drawer__content">
             <nav className="mdc-list">
 
-              <a className="mdc-list-item"  href="#" aria-selected="true">
+              <a className="mdc-list-item"   aria-selected="true">
               <NavLink to="/"  ><h4><strong>Mitchell</strong> Underwood</h4></NavLink>
               </a>
-              <a className="mdc-list-item " href="#" aria-selected="true">
-                <span className="mdc-list-item__text"><NavLink to="/Posts" >Blog</NavLink></span>
+              <a className="mdc-list-item "  aria-selected="true">
+                <span className="mdc-list-item__text"><NavLink to="/Posts" >Posts</NavLink></span>
               </a>
-              <a className="mdc-list-item" href="#">
+              <a className="mdc-list-item" >
                 <span className="mdc-list-item__text"><NavLink to="/Projects" >Projects</NavLink></span>
               </a>
-              <a className="mdc-list-item" href="#">          
+              <a className="mdc-list-item" >          
                 <span className="mdc-list-item__text"><NavLink to="/About" >About</NavLink></span>
               </a>
               <hr className="mdc-list-divider"></hr>
               
               <h3 className=" gd-nav-drawer--subheader">Connect</h3>
               <div className="drawer-connect-block">
-                <a className="mdc-list-item" href="www.linkedin.com/in/mitchellmunderwood" aria-selected="true">
+                <a className="mdc-list-item" href="https://www.linkedin.com/in/mitchellmunderwood" aria-selected="true">
                   <span className="mdc-list-item__text">LinkedIn</span>
                 </a>
-                <a className="mdc-list-item" href="www.github.com/mitchellmunderwood">
+                <a className="mdc-list-item" href="https://www.github.com/mitchellmunderwood">
                   <span className="mdc-list-item__text">Github</span>
                 </a>
                 <NavLink className="mdc-list-item" to="/About">          

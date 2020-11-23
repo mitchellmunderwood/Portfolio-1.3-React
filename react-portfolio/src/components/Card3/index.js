@@ -1,21 +1,23 @@
 import React from "react";
 import "./index.css";
 
-function Card3() {
+function Card3(props) {
+
+    const {colorClass, imageRef, type, title, date, description, badges, repoLink, liveLink} = props.content;
 
     return (
-        <div class="col-md-4">
-            <div class="card mb-1 mr-1">
-                <div class="card-body">
-                    <div class="card-line"></div>
-                    <div class="d-flex justify-content-between align-items-center">
-                            <h3>Title</h3>
-                            <small class="text-muted">11/12/20</small>                                                               
+        <div className="col-md-4">
+            <div className="card mb-1 mr-1">
+                <div className="card-body">
+                    <div className={"card-line " + colorClass}></div>
+                    <div className="d-flex justify-content-between align-items-center">
+                            <h3>{title}</h3>
+                            <small className="text-muted">{date}</small>                                                               
                     </div>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p className="card-text">{description}</p>
                 </div>
-                <div class="card-img-container">
-                    <img class="" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png" width="100%" height="150px"  role="img" aria-label="Placeholder: Thumbnail">
+                <div className="card-img-container">
+                    <img className="" src={process.env.PUBLIC_URL + "/images" + imageRef} width="100%" height="150px"  role="img" aria-label="Placeholder: Thumbnail">
                     </img>
                 </div>
             </div>

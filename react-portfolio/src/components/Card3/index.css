@@ -11,3 +11,35 @@
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
     0 1px 8px 0 rgba(0, 0, 0, 0.12);
 }
+
+.line-blue {
+  background: #039be5;
+}
+
+.line-green {
+  background: #43a047;
+}
+
+.line-red {
+  background: #e53935;
+}
+
+.line-yellow {
+  background: #ffeb3b;
+}
+
+.line-orange {
+  background: #ff8f00;
+}
+
+.line-brown {
+  background: #795548;
+}
+
+.line-gray {
+  background: #546e7a;
+}
+
+.line-black {
+  background: #212121;
+}

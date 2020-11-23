@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import {Link, NavLink} from "react-router-dom";
 
 function Footer() {
 
@@ -14,17 +15,17 @@ function Footer() {
               <div className="col-md-2 offset-md-1 py-4">
                 <h4>Navigation</h4>
                 <ul className="list-unstyled">
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><Link to="/Posts">Posts</Link></li>
+                  <li><Link to="/Projects">Projects</Link></li>
+                  <li><Link to="/About">About</Link></li>
                 </ul>
               </div>
               <div className="col-md-2 py-4">
                 <h4>Connect</h4>
                 <ul className="list-unstyled">
-                  <li><a href="#">Github</a></li>
-                  <li><a href="#">LinkedIn</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="https://www.github.com/mitchellmunderwood">Github</a></li>
+                  <li><a href="https://www.linkedin.com/in/mitchellmunderwood">LinkedIn</a></li>
+                  <li><Link to="/About">Contact</Link></li>
                 </ul>
               </div>
             </div>

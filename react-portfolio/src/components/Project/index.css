@@ -39,3 +39,14 @@
 .post .card-text {
   margin-top: 20px;
 }
+
+.badges img {
+  margin-right: 10px;
+}
+
+.button-link {
+  color: white;
+}
+.button-link:hover {
+  color: white;
+}
