@@ -7,7 +7,10 @@ function Card2(props) {
 
     return (
         <div className="col-md-6">
-        <div className="card mb-1 mr-1">            
+        <div className="card mb-1 mr-1" onClick={() => {
+            props.callback(title);
+            window.scrollTo(0,0);
+            }}>            
             <div className="card-img-container">
                 <img className="bd-placeholder-img" src={process.env.PUBLIC_URL + "/images" + imageRef} width="100%" height="225"  role="img" aria-label="Placeholder: Thumbnail">
                 </img>

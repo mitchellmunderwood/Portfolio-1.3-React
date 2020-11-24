@@ -2,27 +2,35 @@ const data = {
   posts: [{
     imageRef: "/parentconnect.png",
     type: "Post",
-    title: "title",
+    title: "Placholder",
     date: "12/31/20",
-    description: "a short post description",
-    color: 'red'
+    description: "This is placeholder, because I have yet to write a post",
+    color: 'parentConnect'
   }],
   projects:[
     {
       type: "Project",
-      date: "TBD",
+      date: "8/29/20",
       title: "Parent Connect",
       description: "Homeschool together during COVID",
       imageRef: "/parentconnect.png",
       repoLink: "github.com/mitchellmunderwood/Parent-Connect",
       liveLink: "parent-connect.herokuapp.com/",
-      badges: ["JS", "HTML/CSS", "Handlebars", "Express", "Node", "MySQL"],
-      color: "yellow"
+      badges: [
+        {type: "Code", name: "JS"},
+        {type: "Code", name: "HTML"},
+        {type: "Code", name: "CSS"},
+        {type: "Code", name: "Handlebars"},
+        {type: "Code", name: "Express"},
+        {type: "Code", name: "NodeJS"},
+        {type: "Data", name: "MySql"},
+      ],
+      color: "parentConnect"
     },
   
     {
       type: "Project",
-      date: "TBD",
+      date: "7/2/20",
       title: "Party Planner",
       description: "Discover meals and cocktails",
       imageRef: "/party_planner.png",
@@ -30,52 +38,77 @@ const data = {
         "github.com/mitchellmunderwood/Party-Planning-Committee",
       liveLink:
         "mitchellmunderwood.github.io/Party-Planning-Committee/",
-      badges: ["JS", "HTML/CSS", "Material Design", "MealsDB API", "DrinksDB API"],
-      color: "gray"
+        badges: [
+          {type: "Code", name: "JavaScript"},
+          {type: "Code", name: "HTML5"},
+          {type: "Code", name: "CSS3"},
+          {type: "Code", name: "Material Design"},
+          {type: "API", name: "MealsDB"},
+          {type: "API", name: "DrinksDB"}
+        ],
+      color: "partyPlanner"
     },
     {
       type: "Project",
-      date: "TBD",
+      date: "8/15/20",
       title: "Eat-Da-Burger!",
       description: "Eat delicious burgers",
       imageRef: "/burgers.png",
       repoLink: "github.com/mitchellmunderwood/Burger-Buddy",
       liveLink: "burger-buddy-mu.herokuapp.com/",
-      badges: ["JS", "HTML/CSS", "Express", "Node", "MySQL"],
-      color: "green"
+      badges: [
+        {type: "Code", name: "JavaScript"},
+        {type: "Code", name: "HTML5"},
+        {type: "Code", name: "CSS3"},
+        {type: "Code", name: "Handlebars"},
+        {type: "Code", name: "Express"},
+        {type: "Code", name: "NodeJS"},
+        {type: "Code", name: "MySQL"},
+      ],
+      color: "burger"
     },
     {
       type: "Project",
-      date: "TBD",
+      date: "6/25/20",
       title: "Daily Forecast",
       description: "Get your local weather",
       imageRef: "/weather.png",
       repoLink: "github.com/mitchellmunderwood/Weather-App",
       liveLink: "mitchellmunderwood.github.io/Weather-App/",
-      badges: ["JS", "HTML/CSS", "Bootstrap", "OpenWeather API"],
-      color: "red"
+      badges: [
+        {type: "Code", name: "JavaScript"},
+        {type: "Code", name: "HTML5"},
+        {type: "Code", name: "CSS3"},
+        {type: "Code", name: "Bootstrap"},
+        {type: "API", name: "Open Weather"}
+      ],
+      color: "weather"
     },
     {
       type: "Project",
-      date: "TBD",
+      date: "6/8/20",
       title: "Code Quiz",
       description: "Test your JS knowledge",
       imageRef: "/quiz.png",
       repoLink: "github.com/mitchellmunderwood/Code-Quiz",
       liveLink: "mitchellmunderwood.github.io/Code-Quiz/",
-      badges: ["JS", "HTML/CSS"],
-      color: "blue"
+      badges: [
+        {type: "Code", name: "JavaScript"},
+        {type: "Code", name: "HTML5"},
+        {type: "Code", name: "CSS3"},
+      ],
+      color: "quiz"
     },
     {
       type: "Project",
-      date: "TBD",
+      date: "5/27/20",
       title: "Password Generator",
       description: "Stay safe with secure passwords",
       imageRef: "/password.png",
       repoLink: "github.com/mitchellmunderwood/Password-Generator",
       deployLink: "mitchellmunderwood.github.io/Password-Generator/",
-      badges: ["JS"],
-      color: "orange"
+      badges: [{type: "Code", name: "JavaScript"}],
+      color: "password"
     }]
   
   };

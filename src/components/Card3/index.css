@@ -43,3 +43,24 @@
 .line-black {
   background: #212121;
 }
+
+/* Project Based Colors */
+
+.line-parentConnect {
+  background: rgb(32, 50, 106);
+}
+.line-partyPlanner {
+  background: rgb(235, 99, 104);
+}
+.line-burger {
+  background: rgb(243, 158, 61);
+}
+.line-weather {
+  background: rgb(22, 99, 219);
+}
+.line-quiz {
+  background: rgb(118, 38, 117);
+}
+.line-password {
+  background: rgb(166, 35, 31);
+}

@@ -45,7 +45,7 @@ export default function NavDrawerContents(props) {
               </div>
                 <hr className="mdc-list-divider"></hr>
                 <h3 className="gd-nav-drawer--subheader">Mitchell Underwood</h3>
-                <p className="drawer-text">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+                <p className="drawer-text">Creative web developer with design and engineering passion, who wants to help you develop your next big thing.
                 </p>
               
             

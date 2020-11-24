@@ -7,7 +7,10 @@ export default function MainArticle(props) {
 
     return (
         <div className="col-md-12" id="main-article">
-            <div className="card mb-1">
+            <div className="card mb-1" onClick={() => {
+            props.callback(title);
+            window.scrollTo(0,0);
+            }}>            
 
                 <div className="card-img-container">
                     <img id="main-article-photo" className="bd-placeholder-img" src={process.env.PUBLIC_URL + "/images" + imageRef} width="100%" height="225"  role="img" aria-label="Placeholder: Thumbnail">                                                                

@@ -10,7 +10,7 @@ function Footer() {
             <div className="row">
               <div className="col-md-7 py-4">
                 <h4 className="">Mitchell Underwood</h4>
-                <p className="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                <p className="text-muted">Creative web developer with design and engineering passion, who wants to help you develop your next big thing.</p>
               </div>
               <div className="col-md-2 offset-md-1 py-4">
                 <h4>Navigation</h4>

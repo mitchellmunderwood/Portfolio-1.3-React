@@ -9,7 +9,10 @@ function Card3(props) {
 
     return (
         <div className="col-md-4">
-            <div className="card mb-1 mr-1" onClick={() => props.callback(title)}>
+            <div className="card mb-1 mr-1" onClick={() => {
+            props.callback(title);
+            window.scrollTo(0,0);
+            }}>            
                 <div className="card-body">
                     <div className={"card-line line-" + color}></div>
                     <div className="d-flex justify-content-between align-items-center">
