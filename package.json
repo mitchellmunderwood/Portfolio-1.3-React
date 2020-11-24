@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://mitchellmunderwood.github.io"
+  "homepage": "https://mitchellmunderwood.github.io",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
