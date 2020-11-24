@@ -14,8 +14,8 @@ const data = {
       title: "Parent Connect",
       description: "Homeschool together during COVID",
       imageRef: "/parentconnect.png",
-      repoLink: "https://github.com/mitchellmunderwood/Parent-Connect",
-      liveLink: "https://parent-connect.herokuapp.com/",
+      repoLink: "github.com/mitchellmunderwood/Parent-Connect",
+      liveLink: "parent-connect.herokuapp.com/",
       badges: ["JS", "HTML/CSS", "Handlebars", "Express", "Node", "MySQL"],
       color: "yellow"
     },
@@ -27,9 +27,9 @@ const data = {
       description: "Discover meals and cocktails",
       imageRef: "/party_planner.png",
       repoLink:
-        "https://github.com/mitchellmunderwood/Party-Planning-Committee",
+        "github.com/mitchellmunderwood/Party-Planning-Committee",
       liveLink:
-        "https://mitchellmunderwood.github.io/Party-Planning-Committee/",
+        "mitchellmunderwood.github.io/Party-Planning-Committee/",
       badges: ["JS", "HTML/CSS", "Material Design", "MealsDB API", "DrinksDB API"],
       color: "gray"
     },
@@ -39,8 +39,8 @@ const data = {
       title: "Eat-Da-Burger!",
       description: "Eat delicious burgers",
       imageRef: "/burgers.png",
-      repoLink: "https://github.com/mitchellmunderwood/Burger-Buddy",
-      liveLink: "https://burger-buddy-mu.herokuapp.com/",
+      repoLink: "github.com/mitchellmunderwood/Burger-Buddy",
+      liveLink: "burger-buddy-mu.herokuapp.com/",
       badges: ["JS", "HTML/CSS", "Express", "Node", "MySQL"],
       color: "green"
     },
@@ -50,8 +50,8 @@ const data = {
       title: "Daily Forecast",
       description: "Get your local weather",
       imageRef: "/weather.png",
-      repoLink: "https://github.com/mitchellmunderwood/Weather-App",
-      liveLink: "https://mitchellmunderwood.github.io/Weather-App/",
+      repoLink: "github.com/mitchellmunderwood/Weather-App",
+      liveLink: "mitchellmunderwood.github.io/Weather-App/",
       badges: ["JS", "HTML/CSS", "Bootstrap", "OpenWeather API"],
       color: "red"
     },
@@ -61,8 +61,8 @@ const data = {
       title: "Code Quiz",
       description: "Test your JS knowledge",
       imageRef: "/quiz.png",
-      repoLink: "https://github.com/mitchellmunderwood/Code-Quiz",
-      liveLink: "https://mitchellmunderwood.github.io/Code-Quiz/",
+      repoLink: "github.com/mitchellmunderwood/Code-Quiz",
+      liveLink: "mitchellmunderwood.github.io/Code-Quiz/",
       badges: ["JS", "HTML/CSS"],
       color: "blue"
     },
@@ -72,8 +72,8 @@ const data = {
       title: "Password Generator",
       description: "Stay safe with secure passwords",
       imageRef: "/password.png",
-      repoLink: "https://github.com/mitchellmunderwood/Password-Generator",
-      deployLink: "https://mitchellmunderwood.github.io/Password-Generator/",
+      repoLink: "github.com/mitchellmunderwood/Password-Generator",
+      deployLink: "mitchellmunderwood.github.io/Password-Generator/",
       badges: ["JS"],
       color: "orange"
     }]

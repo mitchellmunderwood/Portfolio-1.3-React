@@ -3,25 +3,22 @@ import "./index.css";
 import Body from "../../components/Body/index";
 import Album from "../../components/Album/index";
 import ProjectCard from "../../components/Project/index";
+import {useStoreContext} from "../../store/store";
+import {Redirect} from "react-router-dom";
 
 function Project() {
 
-    const sampleProject = {
-        imageRef: "/party_planner.png",
-        type: "Project",
-        title: "title",
-        date: "12/31/20",
-        description: "a short project description",
-        repoLink: "github.com/mitchellmunderwood",
-        liveLink: "google.com",
-        badges: [{type: "Code", name: "Javascript"},{type: "Code", name: "React"},{type: "Code", name: "Redux"}],
-        color: "blue",
-    }
+    const [state, dispatch] = useStoreContext();
+
+    console.log("Project Page", state.project[0] === undefined)
 
     return (<div>
         <Body>
             <Album>
-                <ProjectCard content={sampleProject}/>
+            {(state.project[0] === undefined) ? 
+                <Redirect to="/Projects" /> :
+                <ProjectCard content={state.project[0]}/> 
+            }
             </Album>
         </Body>
     </div>

@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
+
 
 function Project(props) {
-
+    
     const {imageRef, type, title, date, description, badges, repoLink, liveLink} = props.content;
 
     return (
@@ -17,11 +18,11 @@ function Project(props) {
                 <div className="card-body">
                     <small className="text-muted">{date}</small>
                     <p className="card-text">{description}</p>
-                    <div className="badges">
+                    {/* <div className="badges">
                         {badges.map(badge => {
                            return <img src={"https://img.shields.io/badge/" + badge.type + "-" + badge.name + "-informational?style=flat&logo=" + badge.name.toLowerCase() + "&logoColor=white&color=white"} />;
                         })}
-                    </div>                                            
+                    </div>                                             */}
                     <button type="button" className="btn btn-primary"><a class="button-link" href={"https://" + liveLink}>Go to Live</a></button>
                     <button type="button" className="btn btn-secondary"><a class="button-link" href={"https://" + repoLink}>Go to Repo</a></button>
                 </div>

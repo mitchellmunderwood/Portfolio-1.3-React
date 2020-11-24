@@ -3,21 +3,22 @@ import "./index.css";
 import Body from "../../components/Body/index";
 import Album from "../../components/Album/index";
 import PostCard from "../../components/Post/index";
+import {useStoreContext} from "../../store/store";
+import {Redirect} from "react-router-dom";
 
 function Post() {
-    const samplePost ={
-        imageRef: "/parentconnect.png",
-        type: "Post",
-        title: "title",
-        date: "12/31/20",
-        description: "a short post description",
-        color: 'red',
-    }
+  
+    const [state, dispatch] = useStoreContext();
+
+    console.log("Post Page", state.post)
 
     return (<div>
         <Body>
             <Album>
-                <PostCard content={samplePost}/>
+                {(state.post[0] === undefined) ?  
+                <Redirect to="/Posts" /> :
+                <PostCard content={state.post[0]}/> 
+                }
             </Album>
         </Body>
     </div>
