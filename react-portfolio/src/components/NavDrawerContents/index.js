@@ -39,7 +39,7 @@ export default function NavDrawerContents(props) {
                 <a className="mdc-list-item" href="https://www.github.com/mitchellmunderwood">
                   <span className="mdc-list-item__text">Github</span>
                 </a>
-                <NavLink className="mdc-list-item" to="/About">          
+                <NavLink onClick={()=>{window.scrollTo(0,500)}} className="mdc-list-item" to="/About">          
                   <span className="mdc-list-item__text">Contact</span>
                 </NavLink>
               </div>
