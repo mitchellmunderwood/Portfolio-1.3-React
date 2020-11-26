@@ -15,9 +15,9 @@ function Footer() {
               <div className="col-md-2 offset-md-1 py-4">
                 <h4>Navigation</h4>
                 <ul className="list-unstyled">
-                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="whoismitchell.com/Posts">Posts</Link></li>
-                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="whoismitchell.com/Projects">Projects</Link></li>
-                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="whoismitchell.com/About">About</Link></li>
+                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/Posts">Posts</Link></li>
+                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/Projects">Projects</Link></li>
+                  <li><Link onClick={()=>{window.scrollTo(0,0)}} to="/About">About</Link></li>
                 </ul>
               </div>
               <div className="col-md-2 py-4">
