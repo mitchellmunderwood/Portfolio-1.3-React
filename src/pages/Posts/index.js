@@ -14,7 +14,7 @@ function Posts() {
 
     const postCallback = (name) => {
         dispatch({type: SET_POST, post: state.posts.filter(post => post.title === name)});
-        history.push("/Post");
+        history.push("whoismitchell.com/Post");
     }
 
     return (<div>

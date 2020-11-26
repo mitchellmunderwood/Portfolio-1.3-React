@@ -18,16 +18,16 @@ export default function NavDrawerContents(props) {
             <nav className="mdc-list">
 
               <a className="mdc-list-item"   aria-selected="true">
-              <NavLink to="/"  ><h4><strong>Mitchell</strong> Underwood</h4></NavLink>
+              <NavLink to="whoismitchell.com/"  ><h4><strong>Mitchell</strong> Underwood</h4></NavLink>
               </a>
               <a className="mdc-list-item "  aria-selected="true">
-                <span className="mdc-list-item__text"><NavLink to="/Posts" >Posts</NavLink></span>
+                <span className="mdc-list-item__text"><NavLink to="whoismitchell.com/Posts" >Posts</NavLink></span>
               </a>
               <a className="mdc-list-item" >
-                <span className="mdc-list-item__text"><NavLink to="/Projects" >Projects</NavLink></span>
+                <span className="mdc-list-item__text"><NavLink to="whoismitchell.com/Projects" >Projects</NavLink></span>
               </a>
               <a className="mdc-list-item" >          
-                <span className="mdc-list-item__text"><NavLink to="/About" >About</NavLink></span>
+                <span className="mdc-list-item__text"><NavLink to="whoismitchell.com/About" >About</NavLink></span>
               </a>
               <hr className="mdc-list-divider"></hr>
               

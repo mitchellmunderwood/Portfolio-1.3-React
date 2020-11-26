@@ -30,17 +30,17 @@ const App = () => {
   return (
     <div className="App">
         <Router>
-          <Route exact path="/" component={Hero} />
+          <Route exact path="whoismitchell.com/" component={Hero} />
           <Route path="/" component={Navigation} />
           <Switch>
-            <Route exact path="/" component={Landing}/>
-            <Route exact path="/Projects" component={Projects}/>
-            <Route exact path="/Project" component={Project}/>
-            <Route exact path="/Posts" component={Posts}/>
-            <Route exact path="/Post" component={Post}/>
-            <Route exact path="/About" component={Author}/>
+            <Route exact path="whoismitchell.com/" component={Landing}/>
+            <Route exact path="whoismitchell.com/Projects" component={Projects}/>
+            <Route exact path="whoismitchell.com/Project" component={Project}/>
+            <Route exact path="whoismitchell.com/Posts" component={Posts}/>
+            <Route exact path="whoismitchell.com/Post" component={Post}/>
+            <Route exact path="whoismitchell.com/About" component={Author}/>
           </Switch>
-          <Route path="/" component={Footer} />
+          <Route path="whoismitchell.com/" component={Footer} />
         </Router>
     </div>
   );

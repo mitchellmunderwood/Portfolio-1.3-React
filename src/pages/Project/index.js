@@ -16,7 +16,7 @@ function Project() {
         <Body>
             <Album>
             {(state.project[0] === undefined) ? 
-                <Redirect to="/Projects" /> :
+                <Redirect to="whoismitchell.com/Projects" /> :
                 <ProjectCard content={state.project[0]}/> 
             }
             </Album>
