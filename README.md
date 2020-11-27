@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <!-- image/logo link -->
-  <a href="https://mitchellmunderwood.github.io/Portfolio-1.3-React/"><img src="./README-support/logo.png" alt="title" width="200" height="200" ></a>
+  <a href="https://whoismitchell.com"><img src="./README-support/logo.png" alt="title" width="200" height="200" ></a>
   
   Portfolio-1.3-React
   <br>
@@ -39,7 +39,7 @@ A simple portfolio website, built with react.
 
 ### Live
 
-Portfolio-1.3-React is currently deployed with Github. <a href="https://mitchellmunderwood.github.io/Portfolio-1.3-React/">Go to Live</a>.
+Portfolio-1.3-React is currently deployed with Github. <a href="https://whoismitchell.com">Go to Live</a>.
 <br/>
 
 ### Gallery
