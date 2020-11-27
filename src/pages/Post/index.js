@@ -16,7 +16,7 @@ function Post() {
         <Body>
             <Album>
                 {(state.post[0] === undefined) ?  
-                <Redirect to="whoismitchell.com/Posts" /> :
+                <Redirect to="/Posts" /> :
                 <PostCard content={state.post[0]}/> 
                 }
             </Album>

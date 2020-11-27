@@ -13,7 +13,7 @@ function Projects() {
 
     const projectCallback = (name) => {
         dispatch({type: SET_PROJECT, project: state.projects.filter(project => project.title === name)});
-        history.push("whoismitchell.com/Project");
+        history.push("/Project");
     }
 
     return (<div>
